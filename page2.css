@@ -1,0 +1,17 @@
+nav{
+  display: flex;
+  justify-content: space-between;
+} 
+*{
+	box-sizing: border-box;
+}
+	
+.parent{
+	display: flex; 
+	border: 5px solid pink;
+}
+.carousel-item{
+	height: 50vh;
+	min-height: 500px;
+
+}

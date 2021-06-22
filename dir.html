@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modal Implementation</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="page2.css">
+		<link rel="stylesheet" type="text/css" href="mywor.css">
+	<script src="myjavv.js"></script>
+</head>
+<body>
+
+	<div class="container btn-light">
+		<div class="col-md-12" align="center" >
+		<h2 id="title">Delzzy's Jewelries</h2>
+		<p id="descr">Create a free account and have unlimited access to our site and margazines.</p>
+			<button type="button" class="btn btn-light btn-info-cl" data-toggle="modal" data-target="#exampleModal" style="color: #E62698"> Secure Your Spot</button>
+	</div>
+	</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Create an Account</h5>
+        
+      </div>
+      <div class="modal-body">
+        <form name='registration' action="submitted.html" method="GET" >
+<ul>
+<label for="fname">First name:</label>
+<input id="fname" type="text" size="40">
+
+
+<label for="lname">Last name:</label>
+<input id="lname" type="text" size="40" onblur="check1();">
+<span id="vname">Valid</span>
+<span id="ivname">Invalid</span>
+<br>
+
+
+<label for="passid">Password:</label>
+<input required type="password" name="passid" size="40">
+
+<label for="country">Country:</label> <br>
+<select name="country" size="1" style="width: 380px; size: 40px">
+<option selected="" value="Default">(Please select a country)</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+</select>
+
+<label for="pnum">Phone number</label><br>
+<input id="pnum" type="number" required="" onblur="check2();">
+<span id="vnum">Valid</span>
+<span id="ivnum">Invalid</span>
+<br>
+
+
+<label for="email">Email:</label>
+<input id="email" type="email" size="40" required="" placeholder="dee@example.com" onblur="check3();"/>
+<span id="vmail">Valid</span>
+<span id="ivmail">Invalid</span>
+<br>
+
+<label id="gender">Gender:</label>
+<input required type="radio" for="gender" name="sex" value="Male" />Male</span>
+<input required type="radio" for="gender" name="sex" value="Female" />Female
+
+<br></b><label>Languages:</label>
+
+<input  type="checkbox" name="en" value="en"/>English
+<input  type="checkbox" name="fr" value="fr"/>French
+<input  type="checkbox" name="sp" value="sp"/>Spanish
+<input  type="checkbox" name="it" value="it"/>Italian
+
+<!-- <label for="desc">About:</label> -->
+<br><br><textarea maxlength="250" name="desc" id="desc" placeholder="Tell us about yourself"></textarea>
+<!-- <input required type="submit" name="submit" value="Submit" /> -->
+</ul>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-primary">Create Account</button>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
